@@ -189,24 +189,24 @@ let  result = document.getElementsByClassName('.result')
 let clear = document.getElementsByClassName('.clear')
 
 
-function showTime() {
-    let d = new Date();
-    let h = d.getHours();
-    let m = d.getMinutes();
-    let s = d.getSeconds();
-    let session = "PM";
-    if (h>12) {
-        h = h -12;
-    }
-    if (h>=12) {
-        session = "AM";
-    }
+// function showTime() {
+//     let d = new Date();
+//     let h = d.getHours();
+//     let m = d.getMinutes();
+//     let s = d.getSeconds();
+//     let session = "PM";
+//     if (h>12) {
+//         h = h -12;
+//     }
+//     if (h>=12) {
+//         session = "AM";
+//     }
 
-    h = (h<12) ? "0" + h : h;
-    m = (m<12) ? "0" + m : m;
-    s = (s<12) ? "0" + s : m;
-    let time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("clock").innerHTML = time;
-    setTimeout(showTime, 1000);
-}
-showTime();
+//     h = (h<12) ? "0" + h : h;
+//     m = (m<12) ? "0" + m : m;
+//     s = (s<12) ? "0" + s : m;
+//     let time = h + ":" + m + ":" + s + " " + session;
+//     document.getElementById("clock").innerHTML = time;
+//     setTimeout(showTime, 1000);
+// }
+// showTime();

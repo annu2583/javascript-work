@@ -5,7 +5,7 @@
 
 .Calculator {
     background-color: black;
-    max-width: 400px;
+    max-width: 600px;
     padding: 40px;
     margin: 0 auto;
     box-shadow: 5px 10px 8px 5px #8b8787;
@@ -62,10 +62,6 @@ button {
     background-color: burlywood;
     border: none;
 }
-/* 
-button:hover {
-    background-color: rgb(224, 186, 186);
-} */
 
 #clock{
     width: 800px;
@@ -82,7 +78,7 @@ button:hover {
     text-shadow: 2px 3px #3d5b44;
     border-radius: 20px;
 }
-div{
+.digital_cl{
     background-color: #221414;
     height: 600px;
     padding: 70px 50px;
