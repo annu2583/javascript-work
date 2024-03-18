@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <card>
+        <div class="card_new">
+            <div class="card_content">
+                <h1 onclick="this.innerHTML = 'Ooops!'" class="heading">KEEP,CLEAN,HANDS</h1>
+          
+                <h2 id="for">hey!I am Annu</h2>
+
+                <!-- <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1> -->
+                <h2 onclick="this.innerHTML='hello world'">The onclick Attribute</h2>
+                <!-- <p id="form">fgggg</p> -->
+                <button onmouseover="mOver(this)"onmouseout="mOut(this)"class="tips">Health tips</button>
+
+                <a onclick="this.innerHTML='follow'" class="mail" href="">Email</a>
+                <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+                style="background-color:#D94A38;width:80px; padding:40px;">Agree to this</div>
+             </div>
+
+                <p
+                    onclick="this.innerHTML='The onload and onunload events are triggered when the user enters or leaves'">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus reiciendis minus sit!
+                    Minus
+                    quam vero quibusdam consequatur saepe
+                    animi,maxime quia minima eveniet placeat ut rerum atque hic illo?</p>
+
+                <button  onmouseover="mOver(this)" onmouseout="mOut(this)"class="read">READ MORE</button>
+
+                <input type="text" id="fname" placeholder="Email" oninput="upperCase()">
+                <!-- Enter your name: <input type="text" id="fname" oninput="upperCase()"> -->
+        </div>
+    </card>
+    <div class="new_card">
+
+    </div>
+    <div id="list"></div>
+    <table id="table"></table>
+    <script src="doc.js"></script>
+</body>
+
+</html>

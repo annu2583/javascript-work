@@ -1,0 +1,37 @@
+.tips{
+    background-color: brown;
+    color: #FFEB3B;
+    border: 4px solid brown;
+    border-radius: 10px;
+    /* border-radius: 20px; */
+    padding: 5px;
+}
+p{
+    width: 300px;
+}
+
+.card_new{
+    background: #FFEB3B;
+    display: inline-block;
+    padding: 20px 50px;
+    border: 1px solid yellow;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px lightblue;
+    height: 500px;
+}
+
+.read {
+        background-color: #9d4848;
+        color: white;
+        border-radius: 20px;
+        border: 1px solid brown;
+        width: 300px;
+        padding: 5px;
+}
+.card_content{
+margin-top: 70px;
+}
+.tips:hover{
+    color: rgb(160, 68, 68);
+    background-color: skyblue;
+}
