@@ -51,37 +51,71 @@
 //      });
 // })
 
-let display= document.getElementById("input")
-let buttons= document.querySelectorAll("button")
-let buttonsArray= Array.from(buttons);
-let string=''
-let arr=['+','-','*','/','.']
+// let display= document.getElementById("input")
+// let buttons= document.querySelectorAll("button")
+// let buttonsArray= Array.from(buttons);
+// let string=''
+// let arr=['+','-','*','/','.']
+// buttonsArray.forEach(btn=>{
+//   btn.addEventListener('click',(e)=>{
+//     let lastNum= string.slice(-1);
+
+//     if (e.target.innerHTML=='DEL') {
+//         string = string.substring(0, string.length-1);
+//         display.value= string;
+//     }
+//     else if(e.target.innerHTML=='C'){
+//         string = ""
+//         display.value= string;
+//     }
+    // else if(arr.includes(lastNum) && arr.includes(e.target.innerHTML)){
+    //     string = string.slice(0,string.length-1)+e.target.innerHTML;
+    //     display.value = string;
+    // }
+//     else if(e.target.innerHTML=='='){
+//         string = eval(string);
+//         display.value= string;
+//     }
+//     else{
+
+//         string += e.target.innerHTML;
+//         display.value = string;
+//     }
+
+//   })
+
+// })
+
+
+let display = document.getElementById('input');
+let buttons = document.querySelectorAll('button');
+let buttonsArray =Array.from(buttons);
+let string = '';
+let arr = ['+','-','*','/','.']
 buttonsArray.forEach(btn=>{
-  btn.addEventListener('click',(e)=>{
-    let lastNum= string.slice(-1);
+    btn.addEventListener('click',(e)=>{ 
+        string=string.toString()
+        let lastNum = string?.slice(-1)
 
-    if (e.target.innerHTML=='DEL') {
-        string = string.substring(0, string.length-1);
-        display.value= string;
-    }
-    else if(e.target.innerHTML=='C'){
-        string = ""
-        display.value= string;
-    }
-    else if(arr.includes(lastNum) && arr.includes(e.target.innerHTML)){
-        string = string.slice(0,string.length-1)+e.target.innerHTML;
-        display.value = string;
-    }
-    else if(e.target.innerHTML=='='){
-        string = eval(string);
-        display.value= string;
-    }
-    else{
-
-        string += e.target.innerHTML;
-        display.value = string;
-    }
-
-  })
-
+        if (e.target.innerHTML=='DEL') {
+         string = string.substring(0,string.length-1);
+         display.value = string;
+        }
+        else if(e.target.innerHTML== 'C'){
+            string = ''
+            display.value =string;
+        }
+        else if(arr.includes(lastNum) && arr.includes(e.target.innerHTML)){
+            string = string.slice(0,string.length-1) + e.target.innerHTML;
+            display.value = string;
+        }
+        else if (e.target.innerHTML=='='){
+            string = eval(string);
+            display.value =string;
+        }
+        else {
+            string += e.target.innerHTML;
+            display.value = string;
+        }
+    })
 })
