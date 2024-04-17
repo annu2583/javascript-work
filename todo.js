@@ -40,44 +40,79 @@
 // }
 let input = document.getElementById('myinput');
 let ul = document.getElementById('list');
-let data=[]
+let arr = []
 // let list = []
 function addTask() {
-    let list= ul.getElementsByTagName('li')
+    let list= document.getElementsByTagName('li')
      for (let i = 0; i < list.length; i++) {
-        console.log(list[i]);
-        
-     }
-    if (input.value === '') {
-        alert("You must write something")
-    }
-    else {
-        let li = document.createElement('li');
-        li.innerHTML = input.value;
-        ul.appendChild(li);
-        let span = document.createElement("span");
-        span.innerHTML = ("\u00d7");
+    console.log(list[i]);
 
-        span.className = "close"
-        li.appendChild(span);
-        li.style.display = "flex";
-        li.style.justifyContent = "space-between";
-       li.style.listStyleType = 'none';
-       li.style.padding = '10px 10px';
- 
-       let remove = document.getElementsByClassName('close')
-       for (let i = 0; i < remove.length; i++) {
-        remove[i].addEventListener('click',(e)=>{
-            e.preventDefault()
-        remove[i].parentElement.remove()
-        console.log();
-         })
-        
-       }
-   
 
-            
-    }
-    input.value = "";
+ }
+if (input.value === '') {
+    alert("You must write something")
 }
+else {
+    let li = document.createElement('li');
+    li.innerHTML = input.value;
+    ul.appendChild(li);
 
+
+
+    let span = document.createElement("span");
+    span.innerHTML = ("\u00d7");
+
+    span.className = "close"
+    li.appendChild(span);
+    li.style.display = "flex";
+    li.style.justifyContent = "space-between";
+    li.style.listStyleType = 'none';
+    li.style.padding = '10px 10px';
+
+    let remove = document.getElementsByClassName('close')
+    for (let i = 0; i < remove.length; i++) {
+        remove[i].addEventListener('click', (e) => {
+            e.preventDefault()
+            remove[i].parentElement.remove()
+            console.log();
+        })
+
+
+
+    }
+}
+input.value = "";
+}
+function getData() {
+    let list = localStorage.getItem("data")
+    console.log(list,typeof JSON.parse(list));
+}
+getData()
+
+
+
+
+
+
+
+// call back
+function call() {
+    add()
+}
+function add() {
+    console.log("add is calling");
+    subtract()
+}
+function subtract() {
+    console.log("subtract is calling");
+    mul()
+}
+function mul() {
+    console.log("multiply is calling");
+    divide()
+}
+function divide() {
+    console.log("divide is called");
+    // call()
+}
+call()

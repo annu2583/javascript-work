@@ -52,6 +52,9 @@ button:hover {
   list-style-type: none;
 
 }
+#list{
+  list-style-type: none;
+}
 
 /* ul li{
     padding: 1% 9%;
