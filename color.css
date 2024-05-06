@@ -1,0 +1,36 @@
+main {
+  
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    text-align: center;
+    padding: 20%;
+  }
+  .container h2 {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px
+  }
+
+  
+  .btn-hero {
+    font-family: "Ranchers", sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    color: #222;
+    display: inline-block;
+    transition: 0.3s linear;
+    border: 2px solid #222;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 23px;
+    padding: 10px
+  }
+  .btn-hero:hover {
+    color: #fff;
+    background: #222;
+  }
+  

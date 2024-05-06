@@ -22,6 +22,7 @@ function getSavedData (){ // database
 }
 
 // save in localstorage
+
 function addTask() {
    let arr = getSavedData() // read database
    arr.push(input.value)
@@ -30,13 +31,15 @@ function addTask() {
 }
 
 // render data 
+
 function getData() {
    let list = getSavedData() // read database
    let html =  ''
    for (let i = 0; i < list.length; i++) {
-      html += `<li>${list[i]}<span onclick="removeItem(${i})">X</span></li>`
+      html += `<li>${list[i]}<span class="remove" onclick="removeItem(${i})">X</span></li>`
       // html += '<li>'+list[i]+'<span onclick="removeItem('+i+')">X</span></li>'
       // html += "<li>"+list[i]+"<span onclick='removeItem("+i+")'>X</span></li>"
    }
+
    ul.innerHTML = html
 }
