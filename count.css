@@ -1,0 +1,26 @@
+.container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 340px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 8px 2.44px 20.44px -0.4px #bbb1b1;
+    border: none;
+}
+span{
+    font-size: 50px;
+}
+button{
+    font-size: 20px;
+    font-family: fangsong;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background: #c3c3c3;
+}
+button:hover{
+    color: white;
+    background-color: rgb(66 110 78);
+    transition: 0.5s linear;
+}
