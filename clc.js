@@ -9,7 +9,7 @@ function showTime() {
     let s = d.getSeconds();
     let session = "AM"
 
-    if (h > 12) {
+    if (h <12) {
         h = h - 12;
     }
     if (h>= 12) {

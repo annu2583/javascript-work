@@ -1,0 +1,36 @@
+.Calculator{
+    text-align: center;
+    margin-top: 15%;
+    background: #cecece;
+    padding: 50px;
+    display: inline-block;
+    margin-left: 30%;
+    box-shadow: 5px 10px 20px 25px #44897c6b inset;
+    border-radius: 10px;
+    font-family: cursive;
+}
+.age{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+}
+input{
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    background: #98aeaf
+}
+button{
+    margin-top: 40px;
+    border: none;
+    font-size: 25px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color:  #44897c6b;
+    font-family: cursive;
+}
+button:hover{
+   background-color: rgba(231, 220, 198, 0.493);
+    transform: 5s linear;
+}
